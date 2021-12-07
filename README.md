@@ -5,7 +5,7 @@ _Federate an Azure AD domain using a SAML Identity Provider._
 
 When adding the service provider to your IDP, be sure to include these parameters:
 
-ACS URL: `https://login.microsoftonline.com/login.srf` (this requires a `POST` request)
+ACS URL: `https://login.microsoftonline.com/login.srf` (the method should be `HTTP POST`)
 
 Entity ID: `urn:federation:MicrosoftOnline`
 
@@ -40,7 +40,7 @@ Now you can edit the sample `samlp-config.xml` file with values for your IDP:
 - Change `IssuerUri` to the `Entity ID` of your IDP
 - Change `PassiveLogOnUri` to the SSO url of your IDP (i.e. where azure will send the login request)
 - Change `LogOffUri` to the logoff url of your IDP
-- Copy paste your certificate to `SigningCertificate` (make sure there are no spaces and it's one line)
+- Copy your base64 encoded signing certificate to `SigningCertificate` (make sure there are no spaces and it's one line)
 
 Then move to the directory the file is stored in and import it into powershell:
 ```
