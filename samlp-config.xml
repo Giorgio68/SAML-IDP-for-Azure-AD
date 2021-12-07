@@ -1,0 +1,41 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.Online.Administration.DomainFederationSettings</T>
+      <T>System.Object</T>
+    </TN>
+    <ToString>Microsoft.Online.Administration.DomainFederationSettings</ToString>
+    <Props>
+      <Obj N="ExtensionData" RefId="1">
+        <TN RefId="1">
+          <T>System.Runtime.Serialization.ExtensionDataObject</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>System.Runtime.Serialization.ExtensionDataObject</ToString>
+      </Obj>
+      <S N="ActiveLogOnUri">https://login.microsoftonline.com/login.srf</S>
+      <Nil N="DefaultInteractiveAuthenticationMethod" />
+      <S N="FederationBrandName">Default Federation Brand Name</S>
+      <S N="IssuerUri">IDP ENTITY ID</S>
+      <S N="LogOffUri">IDP LOGOUT URL</S>
+      <Nil N="MetadataExchangeUri" />
+      <Nil N="NextSigningCertificate" />
+      <Nil N="OpenIdConnectDiscoveryEndpoint" />
+      <S N="PassiveLogOnUri">IDP SSO URL</S>
+      <Obj N="PreferredAuthenticationProtocol" RefId="2">
+        <TN RefId="2">
+          <T>Microsoft.Online.Administration.AuthenticationProtocol</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Samlp</ToString>
+        <I32>1</I32>
+      </Obj>
+      <Nil N="PromptLoginBehavior" />
+      <S N="SigningCertificate">YOUR CERTIFICATE HERE (no spaces, one line)</S>
+      <Nil N="SigningCertificateUpdateStatus" />
+      <Nil N="SupportsMfa" />
+    </Props>
+  </Obj>
+</Objs>
