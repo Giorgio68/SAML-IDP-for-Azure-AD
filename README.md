@@ -48,7 +48,7 @@ cd C:\fakepath\
 $idp = Import-Clixml samlp-config.xml
 ```
 
-And change the domain's status as federated:
+And change the domain's status to federated:
 ```
 Set-MsolDomainAuthentication -DomainName "{your-domain}" -FederationBrandName $idp.FederationBrandName -Authentication Federated -PassiveLogOnUri $idp.PassiveLogOnUri -ActiveLogOnUri $idp.ActiveLogonUri -SigningCertificate $idp.SigningCertificate -IssuerUri $idp.IssuerUri -LogOffUri $idp.LogOffUri -PreferredAuthenticationProtocol "SAMLP"
 ```
